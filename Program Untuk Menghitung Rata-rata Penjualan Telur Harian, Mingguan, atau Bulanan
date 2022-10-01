@@ -1,0 +1,20 @@
+//Program Untuk Menghitung Rata-rata Penjualan Telur Harian, Mingguan, atau Bulanan
+#include <iostream>
+using namespace std;
+
+int main() {
+int day, i;
+    float avg = 0, y;
+    cout << "Masukkan banyak hari Anda berjualan: \n";
+    cin >> day;
+    
+    cout << "Masukkan " << day << " penjualan telur anda satu per satu, dalam Kilogram\n";
+    for(i = 0; i < day; i++) {
+        cin >> y;
+        avg += y;
+    }
+    avg /= day;
+    cout << "\nRata-rata penjualan telur selama " << day << " hari adalah = " << avg << " Kg";
+
+    return 0;
+}
